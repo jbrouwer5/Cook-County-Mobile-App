@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet } from "react-native";
 
 // TODO: set up env vars with expo so that we can store API KEY in .env file
 // but we do need to see if there's a safer way to store the API key
@@ -6,7 +6,7 @@ import { StyleSheet } from 'react-native';
 // more info here: https://docs.expo.io/guides/environment-variables/
 // const API_KEY = process.env.EXPO_CCMA_YT_API_KEY;
 // export const api_key = "AIzaSyC-x97X1_c0_zTo2LbfgqNXRemFoDRJ404"; // dummy value to build
-export const api_key = "AIzaSyAvJKBDG3iziQ-oyIG5gch4P6qPfDj69tg";  // dummy value to build
+export const api_key = "AIzaSyAvJKBDG3iziQ-oyIG5gch4P6qPfDj69tg"; // dummy value to build
 // export const api_key = "AIzaSyAvJKBDG3iziQ-oyIG5gch4P6qPfDj69tg";  // dummy value to build
 
 // The spacing between two icons in the sponsor bar
@@ -18,16 +18,14 @@ export const SPONSOR_AUTOSCROLL_DELAY = 10000;
 
 export const FOOTER_HEIGHT = 42;
 
-
 // The ratios for various images, each formatted as a a fraction of width over height
 // To convert  height  to  width,   multiply by this value
 // To convert  width   to  height,   divide  by this value
 export const RATIOS = {
-  featured: 5/4,
-  channels: 3/2,
-  sponsors: 3/2,
+  featured: 5 / 4,
+  channels: 3 / 2,
+  sponsors: 3 / 2,
 };
-
 
 // An accessible color palette for the project
 // Light values are designed to be paired with black text, and dark values are designed
@@ -37,68 +35,67 @@ export const RATIOS = {
 // White text on all of the dark colors is  WCAG AAA compliant
 // Small text in all of the dark colors on a white background is WGAC AA compliant
 export const PALETTE = {
-
   // Logo colors
   maroon: {
-    normal: '#78054B',
-    light:  '#F75EBD',
-    dark:   '#6E0545',
+    normal: "#78054B",
+    light: "#F75EBD",
+    dark: "#6E0545",
   },
-  red:    {
-    normal: '#E30008',
-    light:  '#FF6B70',
-    dark:   '#B30006',
+  red: {
+    normal: "#E30008",
+    light: "#FF6B70",
+    dark: "#B30006",
   },
   orange: {
-    normal: '#FF8500',
-    light:  '#FF8500',
-    dark:   '#B35C00',
+    normal: "#FF8500",
+    light: "#FF8500",
+    dark: "#B35C00",
   },
   yellow: {
-    normal: '#FCBF0F',
-    light:  '#FCBF0F',
-    dark:   '#926E02',
+    normal: "#FCBF0F",
+    light: "#FCBF0F",
+    dark: "#926E02",
   },
-  green:  {
-    normal: '#00C4C2',
-    light:  '#00C4C2',
-    dark:   '#007A78',
+  green: {
+    normal: "#00C4C2",
+    light: "#00C4C2",
+    dark: "#007A78",
   },
-  blue:   {
-    normal: '#008CD2',
-    light:  '#00A3F5',
-    dark:   '#007AB8',
+  blue: {
+    normal: "#008CD2",
+    light: "#00A3F5",
+    dark: "#007AB8",
   },
   purple: {
-    normal: '#9E30B5',
-    light:  '#CA76DB',
-    dark:   '#862999',
+    normal: "#9E30B5",
+    light: "#CA76DB",
+    dark: "#862999",
   },
 
   // Basic colors (black & white)
   // These are defined this way so they can be used anywhere the logo colors above are
-  white:  {
-    normal: '#FFFFFF',
-    light:  '#FFFFFF',
-    dark:   '#FFFFFF',
+  white: {
+    normal: "#FFFFFF",
+    light: "#FFFFFF",
+    dark: "#FFFFFF",
   },
-  black:  {
-    normal: '#000000',
-    light:  '#000000',
-    dark:   '#000000',
+  black: {
+    normal: "#000000",
+    light: "#000000",
+    dark: "#000000",
   },
 
   // Text and background colors (black & white)
   // These are defined here to keep them conceptually separate from the standard black & white,
   // even if we want them to be the same underlying values
   text: {
-    light: '#FFFFFF',
-    dark:  '#000000',
-    link:  '#C38C10',
+    light: "#FFFFFF",
+    dark: "#000000",
+    link: "#C38C10",
   },
   back: {
-    light: '#FFFFFF',
-    dark:  '#000000',
+    light: "#FFFFFF",
+    dark: "#000000",
   },
 };
 
@@ -110,11 +107,11 @@ export const PALETTE = {
 //     text : 'rgb(255, 255, 255)'
 //   },
 // };
-// 
+//
 // export const styles = StyleSheet.create({
 //   // Standard text for screens
 //   baseText: {
-//     fontFamily: 'sans-serif',
+//     fontFamily: 'Helvetica',
 //     textAlign: 'center',
 //     color: 'rgb(255, 255, 255)',
 //     fontSize: 20,
@@ -141,7 +138,7 @@ export const PALETTE = {
 //   },
 //   // Title text for videos
 //   videoTitleText: {
-//     fontFamily: 'sans-serif',
+//     fontFamily: 'Helvetica',
 //     textAlign: 'center',
 //     color: 'rgb(255, 255, 255)',
 //     width: 324
@@ -184,9 +181,9 @@ export const PALETTE = {
 //       backgroundColor: "#FF5733",
 //       fontWeight: "bold",
 //   },
-//   // Text saying that the search of a channel is empty 
+//   // Text saying that the search of a channel is empty
 //   emptySearch : {
-//     fontFamily: 'sans-serif',
+//     fontFamily: 'Helvetica',
 //     textAlign: 'center',
 //     justifyContent : 'center',
 //     width: 250,
@@ -206,7 +203,7 @@ export const PALETTE = {
 //     width: 200,
 //   },
 //   mainButtonText: {
-//     fontFamily: 'sans-serif',
+//     fontFamily: 'Helvetica',
 //     textAlign: 'center',
 //     color: 'rgb(255, 255, 255)',
 //     fontSize: 25,
@@ -243,16 +240,16 @@ export const PALETTE = {
 export const theme = {
   dark: false,
   colors: {
-    primary:    PALETTE.red.normal,
+    primary: PALETTE.red.normal,
     background: PALETTE.back.light,
-    text:       PALETTE.text.dark,
+    text: PALETTE.text.dark,
   },
 };
 /* NAVY & WHITE 
 export const styles = StyleSheet.create({
   // Standard text for screens
   baseText: {
-    fontFamily: 'sans-serif',
+    fontFamily: 'Helvetica',
     textAlign: 'center',
     fontSize: 20,
   },
@@ -277,7 +274,7 @@ export const styles = StyleSheet.create({
   },
   // Title text for videos
   videoTitleText: {
-    fontFamily: 'sans-serif',
+    fontFamily: 'Helvetica',
     textAlign: 'center',
     width: 324
   },
@@ -327,7 +324,7 @@ export const styles = StyleSheet.create({
   },
   // Text saying that the search of a channel is empty 
   emptySearch : {
-    fontFamily: 'sans-serif',
+    fontFamily: 'Helvetica',
     textAlign: 'center',
     justifyContent : 'center',
     width: 250,
@@ -346,7 +343,7 @@ export const styles = StyleSheet.create({
     width: 200,
   },
   mainButtonText: {
-    fontFamily: 'sans-serif',
+    fontFamily: 'Helvetica',
     textAlign: 'center',
     color: '#000000',
     fontSize: 25,
@@ -380,14 +377,13 @@ export const styles = StyleSheet.create({
 }); */
 
 export const styles = StyleSheet.create({
-
   org_title: {
     // fontFamily: 'Montserrat, sans-serif',
     // fontFamily: 'Montserrat_700Regular, sans-serif',
-    fontWeight: 'bold',
+    fontWeight: "bold",
     fontSize: 28,
     color: PALETTE.text.dark,
-    textAlign: 'center',
+    textAlign: "center",
   },
 
   logo_org: {
@@ -399,7 +395,7 @@ export const styles = StyleSheet.create({
   header_text: {
     // fontFamily: 'Montserrat, sans-serif',
     // fontFamily: 'Montserrat_700Regular, sans-serif',
-    fontWeight: 'bold',
+    fontWeight: "bold",
     fontSize: 16,
     color: PALETTE.text.dark,
   },
@@ -413,7 +409,7 @@ export const styles = StyleSheet.create({
 
   body_text: {
     // fontFamily: 'Montserrat, sans-serif',
-    fontWeight: 'normal',
+    fontWeight: "normal",
     fontSize: 14,
     color: PALETTE.text.dark,
     lineHeight: 24,
@@ -421,47 +417,46 @@ export const styles = StyleSheet.create({
 
   link_text: {
     // fontFamily: 'Montserrat, sans-serif',
-    fontWeight: 'normal',
+    fontWeight: "normal",
     fontSize: 14,
     // textDecoration: 'underline',
     color: PALETTE.text.link,
   },
 
-
   // Standard text for screens
   baseText: {
-    fontFamily: 'sans-serif',
-    textAlign: 'center',
+    fontFamily: Platform.OS === "ios" ? "Helvetica" : "sans-serif",
+    textAlign: "center",
     fontSize: 20,
   },
   // Text which has been highlighted by a search
   new_highlight: {
-    color: '#16981D',
-    fontWeight: 'bold',
+    color: "#16981D",
+    fontWeight: "bold",
   },
   // Title text for screens
   titleText: {
     fontSize: 35,
-    fontWeight: 'bold',
-    textAlign: 'center',
-    color: '#FFFFFF',
+    fontWeight: "bold",
+    textAlign: "center",
+    color: "#FFFFFF",
     lineHeight: 45,
   },
   // Title text for channels
   channelTitleText: {
-    fontWeight: 'bold',
-    textAlign: 'center',
-    width: 240
+    fontWeight: "bold",
+    textAlign: "center",
+    width: 240,
   },
   // Title text for videos
   videoTitleText: {
-    fontFamily: 'sans-serif',
-    textAlign: 'center',
-    width: "100%"
+    fontFamily: Platform.OS === "ios" ? "Helvetica" : "sans-serif",
+    textAlign: "center",
+    width: "100%",
   },
   // Logo shown when app first starts
   splashLogo: {
-    width:  "60%",
+    width: "60%",
     height: "60%",
   },
   // Intro page
@@ -485,21 +480,21 @@ export const styles = StyleSheet.create({
   regLogo2: {
     width: 340,
     height: 270,
-    borderRadius:20,
+    borderRadius: 20,
     marginRight: 10,
-    marginLeft: 10
+    marginLeft: 10,
   },
   // Temporary flat logo for child page
   miniLogo: {
     width: 80,
     height: 60,
-    resizeMode: 'center'
+    resizeMode: "center",
   },
   // Centers children in the component
-  centerColumn:{
+  centerColumn: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center'
+    alignItems: "center",
+    justifyContent: "center",
   },
   // Adult page
   wideLogo: {
@@ -510,86 +505,86 @@ export const styles = StyleSheet.create({
   bgLogo: {
     width: 300,
     height: 200,
-    alignItems: 'center',
+    alignItems: "center",
   },
   // Highlighted text from a search
   search_highlight: {
-      backgroundColor: "#FF5733",
-      fontWeight: "bold",
+    backgroundColor: "#FF5733",
+    fontWeight: "bold",
   },
-  // Text saying that the search of a channel is empty 
-  emptySearch : {
-    fontFamily: 'sans-serif',
-    textAlign: 'center',
-    justifyContent : 'center',
+  // Text saying that the search of a channel is empty
+  emptySearch: {
+    fontFamily: Platform.OS === "ios" ? "Helvetica" : "sans-serif",
+    textAlign: "center",
+    justifyContent: "center",
     width: 250,
     fontSize: 20,
   },
   mainButtonStyle: {
-    marginTop:10,
-    paddingTop:15,
-    paddingBottom:15,
-    marginLeft:10,
-    marginRight:30,
-    backgroundColor:'#444454', //with blue gray background ADD8E6, blue gray color #6699CC
-    borderRadius:20,
+    marginTop: 10,
+    paddingTop: 15,
+    paddingBottom: 15,
+    marginLeft: 10,
+    marginRight: 30,
+    backgroundColor: "#444454", //with blue gray background ADD8E6, blue gray color #6699CC
+    borderRadius: 20,
     borderWidth: 1,
-    borderColor: '#444454', //#000
+    borderColor: "#444454", //#000
     width: 200,
   },
   mainButtonText: {
-    fontFamily: 'sans-serif',
-    textAlign: 'center',
-    color: '#FFFFFF',
+    fontFamily: Platform.OS === "ios" ? "Helvetica" : "sans-serif",
+    textAlign: "center",
+    color: "#FFFFFF",
     fontSize: 25,
   },
   footerButtonStyle: {
-    marginTop:5,
-    paddingTop:7,
-    paddingBottom:7,
-    marginLeft:5,
-    marginRight:15,
-    marginBottom:5,
-    backgroundColor:'#444454', //with blue gray background ADD8E6, blue gray color #6699CC
-    borderRadius:10,
+    marginTop: 5,
+    paddingTop: 7,
+    paddingBottom: 7,
+    marginLeft: 5,
+    marginRight: 15,
+    marginBottom: 5,
+    backgroundColor: "#444454", //with blue gray background ADD8E6, blue gray color #6699CC
+    borderRadius: 10,
     borderWidth: 1,
-    borderColor: '#444454', //#000
+    borderColor: "#444454", //#000
     width: 120,
   },
   footerButtonText: {
-    fontFamily: 'sans-serif',
-    textAlign: 'center',
-    color: '#FFFFFF',
+    fontFamily: Platform.OS === "ios" ? "Helvetica" : "sans-serif",
+    textAlign: "center",
+    color: "#FFFFFF",
     fontSize: 12,
   },
   buttonStyle: {
-    paddingTop:5,
-    paddingBottom:5,
-    marginLeft:10,
-    marginRight:10,
+    paddingTop: 5,
+    paddingBottom: 5,
+    marginLeft: 10,
+    marginRight: 10,
     backgroundColor: PALETTE.red.light,
     // backgroundColor: PALETTE.blue.light,
-    borderRadius:20,
+    borderRadius: 20,
     borderWidth: 0,
     borderColor: PALETTE.black.normal,
-    paddingLeft:10,
-    paddingRight:10,
+    paddingLeft: 10,
+    paddingRight: 10,
   },
-  icon : {
-    color: PALETTE.black.normal
+  icon: {
+    color: PALETTE.black.normal,
   },
   searchColor: {
     backgroundColor: PALETTE.back.light, //#ADD8E6
   },
   backColor: {
-    backgroundColor: PALETTE.back.light //6699CC (blue gray)
+    backgroundColor: PALETTE.back.light, //6699CC (blue gray)
   },
-  lineStyle:{
+  lineStyle: {
     borderWidth: 2,
-    margin:20,
+    margin: 20,
   },
   contentContainer: {
-    paddingHorizontal: 20
+    paddingHorizontal: 20,
   },
   sponsorBannerContainer: {
     width: "100%",
